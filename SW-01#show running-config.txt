@@ -1,14 +1,14 @@
-SW2#show running-config 
+SW-01#show running-config 
 Building configuration...
 
-Current configuration : 1135 bytes
+Current configuration : 1508 bytes
 !
 version 15.0
 no service timestamps log datetime msec
 no service timestamps debug datetime msec
 no service password-encryption
 !
-hostname SW2
+hostname SW-01
 !
 !
 !
@@ -19,18 +19,34 @@ spanning-tree mode pvst
 spanning-tree extend system-id
 !
 interface FastEthernet0/1
+ switchport access vlan 10
+ switchport mode access
 !
 interface FastEthernet0/2
+ switchport access vlan 20
+ switchport mode access
 !
 interface FastEthernet0/3
+ switchport access vlan 30
+ switchport mode access
 !
 interface FastEthernet0/4
+ switchport trunk native vlan 99
+ switchport trunk allowed vlan 10,20,30,99
+ switchport mode trunk
+ switchport nonegotiate
 !
 interface FastEthernet0/5
+ switchport access vlan 10
+ switchport mode access
 !
 interface FastEthernet0/6
+ switchport access vlan 20
+ switchport mode access
 !
 interface FastEthernet0/7
+ switchport access vlan 30
+ switchport mode access
 !
 interface FastEthernet0/8
 !
@@ -74,9 +90,6 @@ interface Vlan1
  no ip address
  shutdown
 !
-interface Vlan20
- ip address 192.168.2.10 255.255.255.0
-!
 !
 !
 !
@@ -93,5 +106,4 @@ line vty 5 15
 end
 
 
-SW2#
-SW2#
+SW-01#
