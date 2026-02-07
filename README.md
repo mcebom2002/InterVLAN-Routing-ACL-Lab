@@ -9,7 +9,8 @@ The lab simulates a small corporate network with Admin, Sales, IT, Management, a
 ---
 
 ## Topology
-<img width="931" height="447" alt="Screenshot 2026-02-07 131127" src="https://github.com/user-attachments/assets/78f6e4da-329a-48ec-98b1-5704ceec68d4" />
+<img width="958" height="511" alt="Screenshot 2026-02-07 143812" src="https://github.com/user-attachments/assets/c31c2b18-21b3-4ecf-849a-9fab0c570018" />
+
 
 
 **Devices:**
