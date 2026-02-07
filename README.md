@@ -1,5 +1,4 @@
 # InterVLAN-Routing-ACL-Lab
-# MultiVLAN-Router-On-A-Stick-Lab
 
 ## Overview
 This repository contains a Cisco Packet Tracer lab demonstrating **inter-VLAN routing** using a **Router-on-a-Stick** configuration. It includes multiple VLANs, trunking between switches, and an **isolated VLAN** with ACLs to control traffic.
